@@ -50,12 +50,6 @@ const DWORD dwTeleFootholdAbove = 0x00957EFC;
 const DWORD dwTeleFootholdBelow = 0x00957ED9;
 const DWORD dwTeleIsPortal = 0x00957C25;
 
-// ===== PvP Messages =====
-const DWORD dwSnowBallMsg = 0x0057520A;
-const DWORD dwSnowBallMsgEnd = 0x00575361;
-const DWORD dwSnowBallImpactDirection = 0x00575378;
-const DWORD dwSnowBallImpactForce = 0x000057537A;
-
 // ===== Status Bar =====
 const DWORD dwStatusBarVPos = 0x008CFD55;
 const DWORD dwStatusBarPosRetn = 0x008CFD5A;

@@ -29,11 +29,12 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 	switch (ul_reason_for_call) {
 	case DLL_PROCESS_ATTACH:
 	{
-		CreateConsole();
+		//CreateConsole();
 		CreateHook();
 		std::cout << "GetModuleFileName hook created" << std::endl;
 		NMCO::CreateHook();
 		std::cout << "NMCO hook initialized" << std::endl;
+		Client::UpdateResolution();
 		break;
 	}
 	default: break;
