@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\detours">
+      <UniqueIdentifier>{78940425-4fe1-4831-b133-0a7dc43b6727}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -37,6 +40,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="NMCO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="detours.h">
+      <Filter>Header Files\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="detver.h">
+      <Filter>Header Files\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="syelog.h">
+      <Filter>Header Files\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="INIReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

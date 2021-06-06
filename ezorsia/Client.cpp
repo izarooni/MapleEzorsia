@@ -1,7 +1,9 @@
 #include "stdafx.h"
 #include "AddyLocations.h"
 
-const int nStatusBarY = Client::m_nGameHeight - 578;
+int Client::m_nGameHeight = 768;
+int Client::m_nGameWidth = 1024;
+int nStatusBarY = Client::m_nGameHeight - 578;
 
 __declspec(naked) void AdjustStatusBar() {
 	__asm {
@@ -68,6 +70,8 @@ void Client::EnableNewIGCipher() {
 }
 
 void Client::UpdateResolution() {
+	nStatusBarY = Client::m_nGameHeight - 578;
+
 	Memory::CodeCave(AdjustStatusBar, dwStatusBarVPos, 5);
 	Memory::CodeCave(AdjustStatusBarBG, dwStatusBarBackgroundVPos, 5);
 	Memory::CodeCave(AdjustStatusBarInput, dwStatusBarInputVPos, 9);
