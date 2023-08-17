@@ -1,4 +1,4 @@
-// dllmain.cpp : Defines the entry point for the DLL application.
+// dllmain.cpp : Defines the entry point for the DLL applications
 #include "stdafx.h"
 #include "NMCO.h"
 #include "INIReader.h"
