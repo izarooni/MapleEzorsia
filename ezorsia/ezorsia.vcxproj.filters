@@ -16,6 +16,24 @@
     <Filter Include="Header Files\detours">
       <UniqueIdentifier>{78940425-4fe1-4831-b133-0a7dc43b6727}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\discord">
+      <UniqueIdentifier>{808890f8-435e-44fa-8cbd-77630b876ee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\discord">
+      <UniqueIdentifier>{73df7874-e7de-4964-9c16-eaaddabfd6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{8673a5d1-4e81-46bb-9d78-57d7e772391f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{e36c2a50-49fa-4b7d-b58e-ae1e7f8a20c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mods">
+      <UniqueIdentifier>{c7373875-f6a0-4479-8beb-75a417878fcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mods">
+      <UniqueIdentifier>{5159a32b-86b5-4070-afe4-13eb1c46ea88}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -30,15 +48,6 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AddyLocations.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Memory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Client.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="NMCO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,8 +60,35 @@
     <ClInclude Include="syelog.h">
       <Filter>Header Files\detours</Filter>
     </ClInclude>
+    <ClInclude Include="discord_rpc.h">
+      <Filter>Header Files\discord</Filter>
+    </ClInclude>
+    <ClInclude Include="Discord.h">
+      <Filter>Header Files\discord</Filter>
+    </ClInclude>
+    <ClInclude Include="discord_register.h">
+      <Filter>Header Files\discord</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="CashShop.h">
+      <Filter>Header Files\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Header Files\mods</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginField.h">
+      <Filter>Header Files\mods</Filter>
+    </ClInclude>
     <ClInclude Include="INIReader.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks.h">
+      <Filter>Header Files\util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -62,14 +98,26 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Client.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Memory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="NMCO.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Discord.cpp">
+      <Filter>Source Files\discord</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginField.cpp">
+      <Filter>Source Files\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Source Files\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="CashShop.cpp">
+      <Filter>Source Files\mods</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Source Files\util</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

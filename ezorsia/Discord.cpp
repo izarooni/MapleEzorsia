@@ -4,8 +4,7 @@
 
 #include <ctime>
 
-// change m_sApplicationID to your application ID as shown in https://discord.com/developers/applications
-LPCSTR Discord::m_sApplicationID = "";
+LPCSTR Discord::m_sApplicationID = "1219212688136208474";
 time_t Discord::m_nStartTimestamp = time(nullptr);
 
 void Discord::StartThread() {
@@ -28,9 +27,11 @@ void Discord::Update() {
 	memset(&rp, 0, sizeof(rp));
 
 	rp.startTimestamp = m_nStartTimestamp;
-	rp.largeImageKey = "";
+	rp.largeImageKey = "maplestory";
 	rp.largeImageText = "";
-	rp.details = "";
+	rp.smallImageKey = "";
+	rp.smallImageText = "";
+	rp.details = "MapleStory";
 	rp.state = "";
 	Discord_UpdatePresence(&rp);
 
