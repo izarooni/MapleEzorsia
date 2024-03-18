@@ -16,14 +16,14 @@ void Logger::Info(const char* message, ...) {
 
 	// Format the timestamp
 	char timestamp[20];
-	std::strftime(timestamp, sizeof(timestamp), "[%Y-%m-%d %H:%M:%S] ", &timeInfo);
+	std::strftime(timestamp, sizeof(timestamp), "[%m-%d %H:%M:%S] ", &timeInfo);
 
 	// Write to console
 	char buf[1024] = { 0 };
 	va_list args;
 	va_start(args, message);
 	vsprintf_s(buf, message, args);
-	std::cout << timestamp << "[INFO] " << message << std::endl;
+	std::cout << timestamp << "[INFO] " << buf << std::endl;
 	va_end(args);
 }
 
@@ -35,13 +35,13 @@ void Logger::Warn(const char* message, ...) {
 
 	// Format the timestamp
 	char timestamp[20];
-	std::strftime(timestamp, sizeof(timestamp), "[%Y-%m-%d %H:%M:%S] ", &timeInfo);
+	std::strftime(timestamp, sizeof(timestamp), "[%m-%d %H:%M:%S] ", &timeInfo);
 
 	// Write to console
 	char buf[1024] = { 0 };
 	va_list args;
 	va_start(args, message);
 	vsprintf_s(buf, message, args);
-	std::cout << timestamp << "[WARN] " << message << std::endl;
+	std::cout << timestamp << "[WARN] " << buf << std::endl;
 	va_end(args);
 }
